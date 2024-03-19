@@ -15,8 +15,7 @@ https://lovely-ganache-39e51e.netlify.app
 - Engaging banner section showcasing featured properties with details like images, location, and price range.
 - Highlighted section presenting key features of the website.
 - About section offering insights into the real estate marketplace's mission and vision.
-- Testimonials section featuring success stories from satisfied Members and sellers.
-- Newsletter subscription form for users to stay updated with the latest property listings.
+- Team section featuring success stories from satisfied Members and sellers.
 
 **2. Property Listings and Details:**
 - Property listings page displaying available properties with images, titles, locations, and price ranges.
