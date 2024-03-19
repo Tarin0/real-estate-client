@@ -49,7 +49,7 @@ const MyAddedProperties = () => {
                         </div>
                     </div>
                     <div>
-                        <img src="r1.png" alt="" className="object-cover w-full mb-4 h-36 sm:h-96 bg-gray-500" />
+                        <img src={property?.imageURL} alt="" className="object-cover w-full mb-4 h-36 sm:h-96 bg-gray-500" />
                         <h2 className="mb-1 text-xl font-semibold">{property?.title}</h2>
                         <p className="  text-gray-400">Location : {property?.address},{property?.city},{property?.country}</p>
                         <div className=" flex space-x-5 text-gray-400">

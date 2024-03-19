@@ -75,12 +75,14 @@ const router = createBrowserRouter([
       },
       {
         path: 'my-sold-properties',
-        element: (<PrivateRoute><MySoldProperties></MySoldProperties></PrivateRoute>)
+        element: (<PrivateRoute><MySoldProperties></MySoldProperties></PrivateRoute>),
+        loader: () => fetch('https://real-estate-server-one.vercel.app/wishlist-offer')
 
       },
       {
         path: 'offered-properties',
-        element: (<PrivateRoute><OfferedProperties></OfferedProperties></PrivateRoute>)
+        element: (<PrivateRoute><OfferedProperties></OfferedProperties></PrivateRoute>),
+        loader: () => fetch('https://real-estate-server-one.vercel.app/wishlist-offer')
 
       },
       {
