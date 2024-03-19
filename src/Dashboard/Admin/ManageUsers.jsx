@@ -26,7 +26,7 @@ const ManageUsers = () => {
                 pro.role = action;
 
                 // Send a PUT request to update bid status
-                fetch(`http://localhost:5000/user/${pro.email}`, {
+                fetch(`https://real-estate-server-one.vercel.app/user/${pro.email}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ const ManageUsers = () => {
                 pro.status = action;
 
                 // Send a PUT request to update bid status
-                fetch(`http://localhost:5000/user/${pro.email}`, {
+                fetch(`https://real-estate-server-one.vercel.app/user/${pro.email}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
@@ -103,7 +103,7 @@ const ManageUsers = () => {
             setPropertyInfo(remainingProperty);
             setProperties(remainingProperty);
     
-            const deleteResponse = await fetch(`http://localhost:5000/user/${id}`, {
+            const deleteResponse = await fetch(`https://real-estate-server-one.vercel.app/user/${id}`, {
                 method: 'DELETE',
             });
     

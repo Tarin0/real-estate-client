@@ -22,7 +22,7 @@ const SocialLogin = () => {
                 status: 'verified'
             };
     
-            const response = await fetch(`http://localhost:5000/user/${result?.user?.email}`, {
+            const response = await fetch(`https://real-estate-server-one.vercel.app/user/${result?.user?.email}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

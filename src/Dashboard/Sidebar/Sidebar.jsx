@@ -27,7 +27,7 @@ const Sidebar = () => {
     useEffect(() => {
         const fetchUserRole = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/user/${user?.email}`);
+                const response = await fetch(`https://real-estate-server-one.vercel.app/user/${user?.email}`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch user data');
                 }

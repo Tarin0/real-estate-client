@@ -13,11 +13,11 @@ const DashboardLayout = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const reviewsResponse = await fetch("http://localhost:5000/reviews");
+        const reviewsResponse = await fetch("https://real-estate-server-one.vercel.app/reviews");
         const reviewsData = await reviewsResponse.json();
         setReviewsLength(reviewsData.length);
 
-        const propertyResponse = await fetch("http://localhost:5000/add-property");
+        const propertyResponse = await fetch("https://real-estate-server-one.vercel.app/add-property");
         const propertiesData = await propertyResponse.json();
         setPropertiesLength(propertiesData.length);
       } catch (error) {

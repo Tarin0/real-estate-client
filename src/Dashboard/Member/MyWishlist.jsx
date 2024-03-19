@@ -17,7 +17,7 @@ const MyWishlist = () => {
             const remainingWishlist = wishInfo.filter(pro => pro._id !== id);
             setWishInfo(remainingWishlist);
     
-            const deleteResponse = await fetch(`http://localhost:5000/wishlist/${id}`, {
+            const deleteResponse = await fetch(`https://real-estate-server-one.vercel.app/wishlist/${id}`, {
                 method: 'DELETE',
             });
     

@@ -26,7 +26,7 @@ const ManageProperties = () => {
                 pro.status = action;
 
                 // Send a PUT request to update bid status
-                fetch(`http://localhost:5000/add-property/${pro._id}`, {
+                fetch(`https://real-estate-server-one.vercel.app/add-property/${pro._id}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',

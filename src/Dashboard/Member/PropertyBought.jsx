@@ -15,7 +15,7 @@ const PropertyBought = () => {
                 pro.status = action;
 
                 // Send a PUT request to update bid status
-                fetch(`http://localhost:5000/wishlist-offer/${pro._id}`, {
+                fetch(`https://real-estate-server-one.vercel.app/wishlist-offer/${pro._id}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',

@@ -28,21 +28,22 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
         element: <Home></Home>,
-        errorElement: <ErrorPage></ErrorPage>,
-        loader: () => fetch('http://localhost:5000/add-property')
+        
+        loader: () => fetch('https://real-estate-server-one.vercel.app/add-property')
       },
       { path: '/all-properties', 
       element: <PrivateRoute><AllPropertiesCard></AllPropertiesCard></PrivateRoute> ,
-      loader: () => fetch('http://localhost:5000/add-property')
+      loader: () => fetch('https://real-estate-server-one.vercel.app/add-property')
     },
       {
         path: '/property/:id',
         element: <PrivateRoute><Property></Property></PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5000/property/${params.id}`)
+        loader: ({ params }) => fetch(`https://real-estate-server-one.vercel.app/property/${params.id}`)
       },
     ]
   },
@@ -62,13 +63,13 @@ const router = createBrowserRouter([
       {
         path: 'my-added-properties',
         element: (<PrivateRoute><MyAddedProperties></MyAddedProperties></PrivateRoute>),
-        loader: () => fetch('http://localhost:5000/add-property')
+        loader: () => fetch('https://real-estate-server-one.vercel.app/add-property')
 
       },
       {
         path: 'update-property/:id',
         element: (<PrivateRoute><UpdateProperty></UpdateProperty></PrivateRoute>),
-        loader: ({ params }) => fetch(`http://localhost:5000/add-property/${params.id}`)
+        loader: ({ params }) => fetch(`https://real-estate-server-one.vercel.app/add-property/${params.id}`)
       
 
       },
@@ -92,12 +93,12 @@ const router = createBrowserRouter([
       {
         path: 'manage-properties',
         element: (<PrivateRoute><ManageProperties></ManageProperties></PrivateRoute>),
-        loader: () => fetch('http://localhost:5000/add-property')
+        loader: () => fetch('https://real-estate-server-one.vercel.app/add-property')
       },
       {
         path: 'manage-users',
         element: (<PrivateRoute><ManageUsers></ManageUsers></PrivateRoute>),
-        loader: () => fetch('http://localhost:5000/user')
+        loader: () => fetch('https://real-estate-server-one.vercel.app/user')
 
       },
       {
@@ -109,23 +110,23 @@ const router = createBrowserRouter([
       {
         path: 'my-wishlist',
         element: (<PrivateRoute><MyWishlist></MyWishlist></PrivateRoute>),
-        loader: () => fetch('http://localhost:5000/wishlist')
+        loader: () => fetch('https://real-estate-server-one.vercel.app/wishlist')
       },
       {
         path: 'wishlist-offer/:id',
         element: (<PrivateRoute><WishlistOffer></WishlistOffer></PrivateRoute>),
-        loader: ({ params }) => fetch(`http://localhost:5000/wishlist/${params.id}`)
+        loader: ({ params }) => fetch(`https://real-estate-server-one.vercel.app/wishlist/${params.id}`)
       },
       {
         path: 'property-bought',
         element: (<PrivateRoute><PropertyBought></PropertyBought></PrivateRoute>),
-        loader: () => fetch('http://localhost:5000/wishlist-offer')
+        loader: () => fetch('https://real-estate-server-one.vercel.app/wishlist-offer')
 
       },
       {
         path: 'my-reviews',
         element: (<PrivateRoute><MyReviews></MyReviews></PrivateRoute>),
-        loader : () => fetch('http://localhost:5000/reviews')
+        loader : () => fetch('https://real-estate-server-one.vercel.app/reviews')
 
       },
       {

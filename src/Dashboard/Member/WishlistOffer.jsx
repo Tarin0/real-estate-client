@@ -22,7 +22,7 @@ const WishlistOffer = () => {
 
             const wishOffer = { agentName, propertyTitle, agentEmail,buyerName,buyerEmail, buyingDate, offeredAmount,propertyImage,propertyAddress,propertyCity , propertyCountry,status:"pending" };
 
-            fetch('http://localhost:5000/wishlist-offer', {
+            fetch('https://real-estate-server-one.vercel.app/wishlist-offer', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

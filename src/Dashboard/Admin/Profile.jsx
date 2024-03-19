@@ -22,7 +22,7 @@ const Profile = () => {
                                     </div>
                                 </div>
                                 <div className="px-6 mt-28 space-y-7">
-                                    <h1 className="font-bold text-3xl text-center mb-1">{user?.displayName}</h1>
+                                    <h1 className="font-bold text-3xl text-center mb-1">{user?.displayName}({user?.role})</h1>
                                     <p className="text-gray-800 text-sm text-center">{user?.email}</p>
     
                                     <TeamIcon></TeamIcon>

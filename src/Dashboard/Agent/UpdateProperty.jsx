@@ -31,7 +31,7 @@ const UpdateProperty = () => {
 
             
 
-            const updateResponse = await fetch(`http://localhost:5000/add-property/${addedProperties?._id}`, {
+            const updateResponse = await fetch(`https://real-estate-server-one.vercel.app/add-property/${addedProperties?._id}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'

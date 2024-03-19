@@ -17,7 +17,7 @@ const MyReviews = () => {
             const remainingReviewList = reviewInfo.filter(pro => pro._id !== id);
             setReviewInfo(remainingReviewList);
     
-            const deleteResponse = await fetch(`http://localhost:5000/reviews/${id}`, {
+            const deleteResponse = await fetch(`https://real-estate-server-one.vercel.app/reviews/${id}`, {
                 method: 'DELETE',
             });
     

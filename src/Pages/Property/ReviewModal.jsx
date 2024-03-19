@@ -25,7 +25,7 @@ const ReviewModal = ({ property }) => {
         try {
 
             const property = { reviewerName, agentName, reviewerEmail, agentEmail, reviewerImage, title, reviewDescription, rating, date: dateString, time: timeString, };
-            fetch('http://localhost:5000/reviews', {
+            fetch('https://real-estate-server-one.vercel.app/reviews', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

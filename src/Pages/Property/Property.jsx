@@ -16,7 +16,7 @@ const Property = () => {
     const property = useLoaderData();
     const [isInWishlist, setIsInWishlist] = useState(false);
     useEffect(() => {
-        fetch("http://localhost:5000/wishlist")
+        fetch("https://real-estate-server-one.vercel.app/wishlist")
           .then((res) => res.json())
           .then((wishlist) => {
             const userEmail = user.email; // Implement a function to get the user's email
@@ -49,7 +49,7 @@ const Property = () => {
 
             const wishlist = { userName,userEmail,propertyTitle, startPrice,endPrice,propertyImage,propertyAddress, propertyCity,propertyCountry,agentName, agentEmail,agentImage};
            
-            fetch('http://localhost:5000/wishlist', {
+            fetch('https://real-estate-server-one.vercel.app/wishlist', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

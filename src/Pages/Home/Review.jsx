@@ -6,7 +6,7 @@ const Review = () => {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const reviewsResponse = await fetch("http://localhost:5000/reviews");
+            const reviewsResponse = await fetch("https://real-estate-server-one.vercel.app/reviews");
             const reviewsData = await reviewsResponse.json();
             setReviewsLength(reviewsData);
     

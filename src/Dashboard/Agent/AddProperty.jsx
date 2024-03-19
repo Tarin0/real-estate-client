@@ -30,7 +30,7 @@ const AddProperty = () => {
             const agentPhotoURL = user?.photoURL;
 
             const property = { email, name,title,startPrice,agentPhotoURL,endPrice,address,country,room,city,parking,bathroom, imageURL,  description, status:'pending'};
-            fetch('http://localhost:5000/add-property', {
+            fetch('https://real-estate-server-one.vercel.app/add-property', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

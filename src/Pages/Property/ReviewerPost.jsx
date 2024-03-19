@@ -6,7 +6,7 @@ const ReviewerPost = ({ property }) => {
     useEffect(() => {
         const fetchReviews = async () => {
             try {
-                const response = await fetch('http://localhost:5000/reviews');
+                const response = await fetch('https://real-estate-server-one.vercel.app/reviews');
                 if (!response.ok) {
                     throw new Error('Failed to fetch reviews');
                 }
