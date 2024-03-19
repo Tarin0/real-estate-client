@@ -23,7 +23,7 @@ import PropertyBought from "../Dashboard/Member/PropertyBought";
 import MyReviews from "../Dashboard/Member/MyReviews";
 import OfferProperty from "../Dashboard/Member/OfferProperty";
 import WishlistOffer from "../Dashboard/Member/WishlistOffer";
-
+import ErrorPage from "../Pages/ErrorPage";
 const router = createBrowserRouter([
   {
     path: "/",
